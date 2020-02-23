@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>test</title>
+	<link href="css/test.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/css/ol.css">
+</head>
+<body>
+<div class="section-wrapper">
+	<section class="section section-drag">
+		<div class="drag-wrapper">
+		<div class="drag-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+			<img id="img1" class="drag-img" src="1.jpg" draggable="true" ondragstart="drag(event)">
+		</div>		
+		<div class="drag-container" ondrop="drop(event)" ondragover="allowDrop(event)">
+			<img id="img2" class="drag-img" src="2.jpg" draggable="true" ondragstart="drag(event)">
+		</div>	
+		</div>		
+	</section>
+	
+	<section class="section section-timeline">
+		<div class="timeline-wrapper">
+		<div class="timeline-container">
+			<div class="timeline-img">
+				<img class="timeline-image" src="1.jpg">
+			</div>
+			<div class="timeline-content">
+				<h2>Title 1</h2>
+				<p>21 Feb</p>
+				<p>asd asd asd</p>				
+				<div class="drop-container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			</div>
+		</div>
+		<div class="timeline-container">
+			<div class="timeline-img">
+				<img class="timeline-image" src="2.jpg">
+			</div>
+			<div class="timeline-content">
+				<h2>Title 2</h2>
+				<p>22 Feb</p>
+				<p>asd asd asd</p>				
+				<div class="drop-container" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			</div>
+		</div>
+		</div>
+		<!-- https://codyhouse.co/gem/vertical-timeline/
+			add mobile screen size options based on this-->
+	</section>
+	
+	<section class="section section-map">
+		<div class="map-wrapper">
+		<div id="map-container"></div>
+		</div>
+	</section>
+</div>	
+</body>
+
+<script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.2.1/build/ol.js"></script>
+<script src="js/test.js"></script>
